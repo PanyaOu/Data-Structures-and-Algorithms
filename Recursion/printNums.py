@@ -3,7 +3,7 @@ def main():
 
 
 def printSeq(i):
-    if (i < 1):
+    if i < 1:
         return
     print(i)
     printSeq(i-1)

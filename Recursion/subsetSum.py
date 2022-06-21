@@ -1,6 +1,7 @@
 def main():
-    arr = [3,1,2]
+    arr = [3, 1, 2]
     print(subsetSum(0, [], arr, []))
+
 
 def subsetSum(idx, subset, arr, final):
     if idx > len(arr) - 1:
@@ -12,7 +13,6 @@ def subsetSum(idx, subset, arr, final):
         subset.pop()
         subsetSum(idx + 1, subset, arr, final)
     return sorted(final)
-    
 
 
 if __name__ == '__main__':
